@@ -4,6 +4,7 @@
 Tutorial: show notification message upon button click
 
 2016.10.02 by Szőke Sándor
+
 Android Studio version: 2.2 (September 15, 2016)
 
 ## Steps needed
@@ -11,6 +12,7 @@ Android Studio version: 2.2 (September 15, 2016)
 * drag button onto layout
 * add code to: class MainActivity 
 
+```java
     public void buttonOnClick(View v)
     {
         NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this);
@@ -26,7 +28,7 @@ Android Studio version: 2.2 (September 15, 2016)
         // Builds the notification and issues it.
         mNotifyMgr.notify(mNotificationId, mBuilder.build());
     }
-
+```
 * attach code to button onClick: buttonOnClick
 * place cursor after "(View v)" and press ALT+ENTER to extentend includes
 * place cursor after "(Button)" and press ALT+ENTER to extentend includes
